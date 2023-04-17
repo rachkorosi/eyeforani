@@ -1,0 +1,51 @@
+body {
+    font-family: sans-serif;
+    background-color: rgb(76, 152, 177);;
+    margin: 0 auto;
+    padding: 0;
+}
+header {
+    background-color: white;
+    padding: 3%;
+}
+h1 {
+    font-size: 700%;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+
+.i {
+    color: rgb(76, 147, 169);
+}
+
+
+
+nav a {
+    color: black;
+    text-decoration-line: none;
+    font-size: 200%;
+    
+}
+
+nav li a:hover {
+    background-color: black;
+    color: white;
+    padding: 15%;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    column-gap: 10%;
+    
+    
+
+}
+
+h2 {
+    text-align: center;
+   color: white;
+   font-weight: 200;
+   font-size: 260%;
+}
