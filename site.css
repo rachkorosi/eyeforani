@@ -1,13 +1,16 @@
 body {
     font-family: sans-serif;
-    background-color: rgb(76, 152, 177);;
+    background-color: rgb(76, 152, 177);
+    ;
     margin: 0 auto;
     padding: 0;
 }
+
 header {
     background-color: white;
     padding: 3%;
 }
+
 h1 {
     font-size: 700%;
     text-align: center;
@@ -25,7 +28,7 @@ nav a {
     color: black;
     text-decoration-line: none;
     font-size: 200%;
-    
+
 }
 
 nav li a:hover {
@@ -33,19 +36,45 @@ nav li a:hover {
     color: white;
     padding: 15%;
 }
+
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     column-gap: 10%;
-    
-    
+
+
 
 }
 
 h2 {
     text-align: center;
-   color: white;
-   font-weight: 200;
-   font-size: 260%;
+    color: white;
+    font-weight: 200;
+    font-size: 260%;
+}
+
+.team-member {
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+}
+
+.team-member img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.meet-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member {
+    margin: 20px;
+    text-align: center;
 }
