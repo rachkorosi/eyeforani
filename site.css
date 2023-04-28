@@ -53,7 +53,7 @@ nav ul {
 h2 {
     text-align: center;
     color: white;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 260%;
 }
 
@@ -75,6 +75,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    color: white;
 }
 
 .team-member {
@@ -87,8 +88,46 @@ footer {
     color: black;
     text-align: center;
     padding: 40px;
+    padding-top: 15px;
     font-family: Arial, sans-serif;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
     font-weight: bold;
     margin-top: 100px;
+    
+}
+
+.footer {
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 2;
+}
+
+.footerp {
+    padding-top: 0;
+    font-weight: 300;
+    font-size: 120%;
+    color: black;
+}
+
+.iphone {
+    width: 50%;
+    height: 50%;
+}
+
+p {
+    text-align: center;
+    color: white;
+    font-size: 150%;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-weight: 100;
+}
+
+.name {
+    font-size: 120%;
+}
+
+.team-member p {
+    font-size: 95%;
 }
