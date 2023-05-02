@@ -93,7 +93,7 @@ footer {
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
     font-weight: bold;
     margin-top: 100px;
-    
+
 }
 
 .footer {
@@ -130,4 +130,39 @@ p {
 
 .team-member p {
     font-size: 95%;
+}
+
+.mission-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* style for each mission */
+.mission {
+    width: 60%;
+    max-width: 800px;
+    background-color: whitesmoke;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+    margin-bottom: 30px;
+    padding: 40px;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+
+.mission h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.mission p {
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 0;
+    color: black;
 }
