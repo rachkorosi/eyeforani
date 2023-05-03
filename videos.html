@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" type="text/css" href="site.css" media="all">
   <title>Videos</title>
 </head>
@@ -42,4 +43,15 @@
         <p class = "footerp">&copy; 2023 eye for an i</p>
     </footer>
     </body>
+    <script>$(document).ready(function(){
+        $("a[href='about.html'], a[href='videos.html'], a[href='sticker.html']").click(function(event){
+            event.preventDefault();
+            $("header .header").fadeOut("slow");
+            $("header h1, header nav").slideUp("slow");
+            setTimeout(function(){
+                window.location = event.target.href;
+            }, 1000);
+        });
+    });
+    </script>
 </html>

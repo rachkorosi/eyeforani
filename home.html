@@ -6,43 +6,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="site.css" media="all">
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <title>Home</title>
 </head>
 
 <body>
 <header>
 
-<h1> <span class = "eye">eye</span> <span class = "inbet"> for an</span> <span class = "i">i</span></h1>
+    <img src = "images/eyeforaniblue.png" class = "header">
 
-<nav>
+    <h1> <span class = "eye">EYE</span> <span class = "inbet"> FOR AN </span> <span class = "i">i</span></h1>
+
+
+
+<nav class = "homenav">
     <ul>
         <li>
-            <a href = "home.html">home</a>
+            <a href = "#homeinfo" onclick="scrollToSection()">HOME</a>
             
         </li>
         <li>
-            <a href = "about.html">about</a>
+            <a href = "about.html">ABOUT</a>
 
         </li>
         <li>
-            <a href = "videos.html">videos</a>
+            <a href = "videos.html">VIDEOS</a>
             
         </li>
         <li>
-            <a href = "sticker.html">stickers</a>
+            <a href = "sticker.html">STICKERS</a>
             
         </li>
     </ul>
 </nav>
 </header>
+<div id = "homeinfo">
 <h2>a student-led campaign</h2>
 
-<p>this is a place where we will describe stuff. yay. woohoo. steve jackson is the goat. katheryn elizabeth hudson was born on october 25th, 1984 at 8:03 am on a thursday in santa barbara, california.</p>
+<p>Did you know that the devices you use come from materials sourced from 43 different countries?</p>
+
 
 <picture class = "iphone">
     <img class = "iphone" src = "images/purepng.png" alt = "iPhone picture">
 </picture>
 
+<p>Many of the minerals in your phone such as lithium, tin, and cobalt come from mines in Africa and Asia -- and miners extract these minerals under horrific conditions.</p>
+
+<p> Big tech takes advantage</p>
+
+</div>
 
 <footer>
     <h2 class = "footer">CONTACT US</h2>
@@ -50,5 +63,29 @@
     <p class = "footerp">&copy; 2023 eye for an i</p>
 </footer>
 
+
+
 </body>
+
+<script>$(document).ready(function(){
+    $("a[href='about.html'], a[href='videos.html'], a[href='sticker.html']").click(function(event){
+        event.preventDefault();
+        $("header .header").fadeOut("slow", function(){
+            window.location = event.target.href;
+        });
+       
+    });
+});</script>
+
+<script>$(document).ready(function(){
+    $("a[href='about.html'], a[href='videos.html'], a[href='sticker.html']").click(function(event){
+        event.preventDefault();
+        $("header h1, header nav").animate({
+            marginTop: "-330px",
+
+        }, 3000, function() {
+            window.location = event.target.href;
+        });
+    });
+});</script>
 </html>

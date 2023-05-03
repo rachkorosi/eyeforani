@@ -11,18 +11,29 @@ header {
     padding: 3%;
 }
 
+
+
 h1 {
-    font-size: 700%;
+    font-size: 500%;
     text-align: center;
     padding-bottom: 0;
-    margin-top: 0;
-    margin-bottom: 10px;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    letter-spacing: 25px;
+    font-weight: 500;
+    
+  
 }
 
-
+.header {
+    margin-left: 25%;
+    width: 50%;
+  
+}
 
 .i {
     color: rgb(76, 147, 169);
+    font-weight: 600;
 }
 
 
@@ -30,7 +41,9 @@ h1 {
 nav a {
     color: black;
     text-decoration-line: none;
-    font-size: 200%;
+    font-size: 150%;
+    letter-spacing: 5px;
+    font-weight: 500;
 
 }
 
@@ -50,11 +63,17 @@ nav ul {
 
 }
 
+.homenav {
+    padding-bottom: 12%;
+}
+
 h2 {
     text-align: center;
     color: white;
     font-weight: 300;
-    font-size: 260%;
+    font-size: 250%;
+    padding: 3%;
+    letter-spacing: 5px;
 }
 
 .team-member {
@@ -138,32 +157,36 @@ p {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    /*background-color: rgba(200, 249, 255, 0.635);*/
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 /* style for each mission */
 .mission {
     width: 60%;
     max-width: 800px;
-    background-color: whitesmoke;
-    border: 2px solid #000;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+background-color: rgba(200, 249, 255, 0.635);
+   
     margin-bottom: 30px;
+    margin-top: 30px;
     padding: 40px;
     text-align: center;
     transition: all .2s ease-in-out;
 }
 
 .mission h3 {
-    font-size: 22px;
+    font-size: 190%;
     margin-bottom: 20px;
     margin-top: 0px;
     font-weight: lighter;
 }
 
 .mission p {
-    font-size: 17px;
+    font-size: 130%;
     line-height: 1.5;
     margin: 0;
     color: black;
 }
+
+
