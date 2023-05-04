@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <script src="jquery-3.6.1.js"></script>
     <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
     <link rel="stylesheet" type="text/css" href="site.css" media="all">
     <title>About</title>
 </head>
@@ -128,13 +129,5 @@
     </footer>
 
 </body>
-<script>$(document).ready(function(){
-    $("a[href='about.html'], a[href='videos.html'], a[href='sticker.html']").click(function(event){
-        event.preventDefault();
-        $("header .header").fadeOut("slow", function(){
-            window.location = event.target.href;
-        });
-    });
-});</script>
 
 </html>

@@ -34,3 +34,15 @@ function scrollToSection() {
     });
 }
 
+
+$(document).ready(function() {
+    $(window).scroll(function() {
+        var sectionPosition = $('#my-section').offset().top;
+        var scrollPosition = $(window).scrollTop() + $(window).height();
+
+        if (scrollPosition > sectionPosition) {
+            $('#my-section-content').fadeIn();
+        }
+    });
+});
+
