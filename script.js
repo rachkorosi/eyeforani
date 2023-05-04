@@ -16,10 +16,14 @@ $(document).ready(function() {
     setTimeout(function() {
       window.location.href = target;
     }, 500);
-    $('header .header').fadeOut();
-    $('header h1').animate({
-      marginTop: '-605px'
-    }, 1000);
+    $('header .header').fadeOut("slow");
+
+    setTimeout(function() {
+      $('header h1').animate({ 
+        marginTop: '-1600px'
+      }, 400);
+    }, 400);
+   
   });
 
 });
