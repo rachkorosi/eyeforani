@@ -1,48 +1,28 @@
-const elements = document.querySelectorAll('.scroll-animation');
-
-const isInViewport = (element) => {
-  const rect = element.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-};
-
-const handleScroll = () => {
-  elements.forEach((element) => {
-    if (isInViewport(element)) {
-      element.classList.add('visible');
-    }
-  });
-};
-
-window.addEventListener('scroll', handleScroll);
-
-function scrollToSection() {
-    // Get the position of the section to scroll to
-    const sectionPosition = document.querySelector('#homeinfo').offsetTop;
- 
-      document.documentElement.style.scrollBehavior = 'smooth';
-  document.body.style.scrollBehavior = 'smooth';
-
-    // Scroll to the section using smooth behavior
-    window.scrollTo({
-        top: sectionPosition,
-        behavior: 'smooth'
-    });
-}
-
-
 $(document).ready(function() {
-    $(window).scroll(function() {
-        var sectionPosition = $('#my-section').offset().top;
-        var scrollPosition = $(window).scrollTop() + $(window).height();
 
-        if (scrollPosition > sectionPosition) {
-            $('#my-section-content').fadeIn();
-        }
-    });
+  // Handle clicks on links that should scroll to the target section
+  $('.scroll-link').click(function(event) {
+    event.preventDefault();
+    const target = $(this).attr('href');
+    $('html, body').animate({
+      scrollTop: $(target).offset().top
+    }, 1000);
+  });
+
+  // Handle clicks on links that shouldn't scroll (about, videos, stickers)
+  $('.no-scroll-link').click(function(event) {
+    event.preventDefault();
+    const target = $(this).attr('href');
+    setTimeout(function() {
+      window.location.href = target;
+    }, 500);
+    $('header .header').fadeOut();
+    $('header h1').animate({
+      marginTop: '-605px'
+    }, 1000);
+  });
+
 });
+
+
 
