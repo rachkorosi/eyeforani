@@ -199,6 +199,7 @@ p {
     }
 }
 
+<<<<<<< HEAD
 .nutrition {
     display: flex;
     flex-direction: row;
@@ -206,3 +207,5 @@ p {
     justify-content: space-evenly;
     align-items: center;
 }
+=======
+>>>>>>> 6ce8eca5107ca069e934828e6be95209841616ec

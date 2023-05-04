@@ -23,22 +23,10 @@
 
 <nav class = "homenav">
     <ul>
-        <li>
-            <a href = "#homeinfo" onclick="scrollToSection()">HOME</a>
-            
-        </li>
-        <li>
-            <a href = "about.html">ABOUT</a>
-
-        </li>
-        <li>
-            <a href = "videos.html">VIDEOS</a>
-            
-        </li>
-        <li>
-            <a href = "sticker.html">STICKERS</a>
-            
-        </li>
+        <li><a href="#homeinfo" class="scroll-link">HOME</a></li>
+        <li><a href="about.html" class="no-scroll-link">ABOUT</a></li>
+        <li><a href="videos.html" class="no-scroll-link">VIDEOS</a></li>
+        <li><a href="sticker.html" class="no-scroll-link">STICKERS</a></li>
     </ul>
 </nav>
 </header>
@@ -69,26 +57,5 @@
 
 
 </body>
-
-<script>$(document).ready(function(){
-    $("a[href='about.html'], a[href='videos.html'], a[href='sticker.html']").click(function(event){
-        event.preventDefault();
-        $("header .header").fadeOut("slow", function(){
-            window.location = event.target.href;
-        });
-       
-    });
-});</script>
-
-<script>$(document).ready(function(){
-    $("a[href='about.html'], a[href='videos.html'], a[href='sticker.html']").click(function(event){
-        event.preventDefault();
-        $("header h1, header nav").animate({
-            marginTop: "-330px",
-
-        }, 3000, function() {
-            window.location = event.target.href;
-        });
-    });
-});</script>
+  
 </html>
