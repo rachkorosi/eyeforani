@@ -4,6 +4,7 @@ body {
     ;
     margin: 0 auto;
     padding: 0;
+    max-width: 100%;
 }
 
 header {
@@ -117,8 +118,8 @@ footer {
 
 .footer {
     color: black;
-    letter-spacing: 2px;
-    font-weight: 600;
+    letter-spacing: 5px;
+    font-weight: 400;
     margin-bottom: 2;
 }
 
@@ -190,15 +191,6 @@ ol li {
     color: black;
 }
 
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
 
 .nutrition {
     display: flex;
@@ -218,7 +210,7 @@ ol li {
     background-color: rgba(200, 249, 255, 0.635);
     border: 3px solid white;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 4%;
     padding: 20px;
     transition: transform 0.3s ease-in-out;
 }
@@ -232,7 +224,7 @@ ol li {
     font-size: 24px;
     color: black;
     font-weight: lighter;
-    text-transform: uppercase;
+
     text-align: center;
 }
 
@@ -242,3 +234,177 @@ ol li {
     line-height: 1.5;
     color: black;
 }
+
+
+video {
+    display: block;
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7%;
+}
+
+.features h3 {
+    letter-spacing: 8px;
+    font-weight: 400;
+    padding: 1%;
+}
+
+
+body {
+    animation: fade-in 1s ease-in-out forwards;
+  }
+  
+  @keyframes fade-in {
+    
+    0% {
+      opacity: 0;
+      visibility: visible;
+      background-color: white;
+    }
+    20% {
+        background-color: white;
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+      
+    }
+  }
+
+  
+.beginning {
+    font-size: 300%;
+    text-align: left;
+    margin-right: 25%;
+}
+
+.second {
+    font-size: 250%;
+    text-align: right;
+}
+
+
+.phone {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0;
+   align-items:  center;
+
+
+  
+}
+
+.phone > * {
+    margin: 0;
+}
+.iphone-desc {
+    font-size: 300%;
+    flex-grow: 1;
+    margin: 0;
+    margin-right: 20%;
+    text-align: right;
+}
+
+
+.miningpic {
+    width: 50%;
+    margin-left: 25%;
+    opacity: 60%;
+}
+
+.extraction {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 5px;
+    padding-bottom: 10%;
+    align-items: center;
+}
+
+.extraction > * {
+    margin: 0;
+}
+
+.extractiondescription {
+    font-size: 250%;
+    margin-left: 5%;
+    margin-right: 3%;
+    text-align: right;
+}
+
+.story {
+    padding: 7%;
+    font-size: 350%;
+}
+
+.landfill {
+    margin-left: 47%;
+}
+
+.pollution {
+    display: flex;
+    padding-bottom: 5%;
+    align-items: center;
+}
+
+.pollution > * {
+    margin: 0;
+}
+
+.pollution p {
+    font-size: 275%;
+    margin-right: 5%;
+    margin-left: 5%;
+    text-align: left;
+}
+
+.child {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.child > *, .minerals > *{
+    margin: 0;
+}
+
+.child p {
+    text-align: right;
+    font-size: 250%;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+.child img {
+    margin-left: 5%;
+}
+
+.cobalt {
+    width: 50%;
+    
+}
+.minerals {
+    display: flex;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    align-items: center;
+}
+
+.minerals p {
+    text-align: left;
+    font-size: 300%;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+
+.fade-in-item {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .fade-in-item.visible {
+    opacity: 1;
+  }
