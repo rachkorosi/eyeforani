@@ -216,7 +216,7 @@ ol li {
 
 .feature-box {
     background-color: rgba(200, 249, 255, 0.635);
-    border: 3px solid #ddd;
+    border: 3px solid white;
     border-radius: 10px;
     margin-bottom: 20px;
     padding: 20px;
