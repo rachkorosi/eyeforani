@@ -254,26 +254,28 @@ video {
 
 body {
     animation: fade-in 1s ease-in-out forwards;
-  }
-  
-  @keyframes fade-in {
-    
+}
+
+@keyframes fade-in {
+
     0% {
-      opacity: 0;
-      visibility: visible;
-      background-color: white;
+        opacity: 0;
+        visibility: visible;
+        background-color: white;
     }
+
     20% {
         background-color: white;
     }
-    100% {
-      opacity: 1;
-      visibility: visible;
-      
-    }
-  }
 
-  
+    100% {
+        opacity: 1;
+        visibility: visible;
+
+    }
+}
+
+
 .beginning {
     font-size: 300%;
     text-align: left;
@@ -290,15 +292,16 @@ body {
     display: flex;
     flex-direction: row;
     column-gap: 0;
-   align-items:  center;
+    align-items: center;
 
 
-  
+
 }
 
-.phone > * {
+.phone>* {
     margin: 0;
 }
+
 .iphone-desc {
     font-size: 300%;
     flex-grow: 1;
@@ -322,7 +325,7 @@ body {
     align-items: center;
 }
 
-.extraction > * {
+.extraction>* {
     margin: 0;
 }
 
@@ -348,7 +351,7 @@ body {
     align-items: center;
 }
 
-.pollution > * {
+.pollution>* {
     margin: 0;
 }
 
@@ -366,7 +369,8 @@ body {
     align-items: center;
 }
 
-.child > *, .minerals > *{
+.child>*,
+.minerals>* {
     margin: 0;
 }
 
@@ -383,8 +387,9 @@ body {
 
 .cobalt {
     width: 50%;
-    
+
 }
+
 .minerals {
     display: flex;
     padding-top: 5%;
@@ -403,8 +408,8 @@ body {
 .fade-in-item {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
-  }
-  
-  .fade-in-item.visible {
+}
+
+.fade-in-item.visible {
     opacity: 1;
-  }
+}
