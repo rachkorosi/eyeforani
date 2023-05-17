@@ -193,6 +193,7 @@ ol li {
 
 
 .nutrition {
+    padding-top: 20px;
     display: flex;
     flex-direction: row;
     margin: 20px;
