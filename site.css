@@ -414,3 +414,15 @@ body {
 .fade-in-item.visible {
     opacity: 1;
 }
+
+.vid-header h2 {
+    padding: 0%;
+}
+
+.vid-header {
+    margin-bottom: 5%;
+}
+
+.vid-header p {
+    font-size: 14pt;
+}
