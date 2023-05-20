@@ -479,3 +479,11 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.redbubble {
+    font-size: 200%;
+}
+
+.redbubble a {
+    font-weight: 500;
+}
